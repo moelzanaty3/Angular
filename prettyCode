@@ -1,0 +1,28 @@
+1.
+    - npm install prettier -D
+    - .prettierrc
+        {
+         “printWidth”: 120,
+         “singleQuote”: true,
+         “useTabs”: false,
+         “tabWidth”: 2,
+         “semi”: true,
+         “bracketSpacing”: true
+        }
+    - .prettierignore
+
+2. tslint.json
+3. Configure pre-commit hooks
+    - npm install npm-run-all husky pretty-quick -D
+        - https://github.com/azz/pretty-quick
+        - https://github.com/typicode/husky
+    - add these scripts to package.json
+        "format:fix": "pretty-quick --staged",
+        "precommit": "run-s format:fix lint",
+        "lint": "ng lint",
+        "pretty-quick": "pretty-quick"
+        "husky": {
+            "hooks": {
+              "pre-commit": "pretty-quick --staged"
+            }
+          }
