@@ -1,31 +1,6 @@
 {
   "items": [
     {
-      "id": 1,
-      "name": "Red Item",
-      "description": "This is a red item"
-    },
-    {
-      "id": 2,
-      "name": "Orange Item",
-      "description": "This is an orange item"
-    },
-    {
-      "id": 3,
-      "name": "Yellow Item",
-      "description": "This is a yellow item"
-    },
-    {
-      "id": 4,
-      "name": "Green Item",
-      "description": "This is a green item"
-    },
-    {
-      "id": 5,
-      "name": "Blue Item",
-      "description": "This is a blue item"
-    },
-    {
       "id": 6,
       "name": "Indigo Item",
       "description": "This is a indigo item"
