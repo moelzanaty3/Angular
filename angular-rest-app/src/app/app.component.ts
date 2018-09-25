@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular ZERO App';
   links = [
-    { path: '/home', icon: 'home', label: 'Home'},
-    { path: '/items', icon: 'list', label: 'Items'}
+    { path: '/home', icon: 'home', label: 'Home' },
+    { path: '/items', icon: 'list', label: 'Items' },
+    { path: '/widgets', icon: 'view_quilt', label: 'Widgets' }
   ];
 }
