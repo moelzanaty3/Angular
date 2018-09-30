@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IWidget, WidgetService } from '../shared';
 
 @Component({
   selector: 'app-widgets',
@@ -6,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./widgets.component.scss']
 })
 export class WidgetsComponent implements OnInit {
-  constructor() {}
-  ngOnInit() {}
+  widgets;
+  selectedWidgetItem;
+
+  constructor(private widgetService: WidgetService) {}
+  ngOnInit() {
+    this.widgetService.all().subscribe(widgets => (this.widgets = widgets));
+  }
+  /*Selected Widgets*/
+  selectedWidget(widget) {
+    this.selectedWidgetItem = widget;
+  }
 }

@@ -1,1 +1,51 @@
-<p>Hello, lol this is widgets module</p>
+<div class="container">
+  <!-- WIDGETS LIST -->
+  <div class="col-50">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h1>Widgets</h1>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item
+            *ngFor="let widget of widgets"
+            (click)="selectedWidget(widget)">
+            <h3 mat-line>{{widget.name}}</h3>
+            <button mat-icon-button>
+              <mat-icon>close</mat-icon>
+            </button>
+            <p mat-line>
+              {{widget.description}}
+            </p>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+
+  <!-- WIDGET DETAILS -->
+  <div class="col-50">
+    <mat-card >
+      <mat-card-header>
+        <mat-card-title >
+          <h1 *ngIf="selectedWidgetItem; else prompt">
+            Editing {{selectedWidgetItem['name']}}
+          </h1>
+          <ng-template #prompt>Create</ng-template>
+        </mat-card-title>
+      </mat-card-header>
+      <form>
+        <mat-card-content *ngIf="selectedWidgetItem">
+          {{selectedWidgetItem['description']}}
+        </mat-card-content>
+        <mat-card-actions>
+          <button type="submit" mat-button>Save</button>
+          <button type="button" mat-button>Cancel</button>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </div>
+</div>
