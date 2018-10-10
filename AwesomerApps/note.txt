@@ -1,0 +1,2 @@
+- Building Awesomer Apps with Angular, Part 2
+    - 
