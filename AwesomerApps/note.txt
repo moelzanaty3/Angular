@@ -1,74 +1,23 @@
 - Building Awesomer Apps with Angular, Part 2
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
-    - lorem
+    - ES6 module
+        - allow you to organize application into kinds of blocks that see each others
+        - it's an organizational mechanisms at the language level and that's allow to organize our code and put it back together
+    - Route
+        - it's a way to define a specific state/pages in application
+        - path: '**'  it's a wild card that will be available for any pages that does NOT exist
+    - Component
+        - they are lagos of any application
+        - fundamental building block for the application
+        - encapsulated a bit of functionality that we can use it whatever we want
+        - ngOnInit : it's part of life cycle hooks that start after the constructor done, but it fires when the initial state is ready
+        - we inject the service in the constructor with PRIVATE keyword because to take the parameter and assign it to local variable with the same name .
+        - a two property that a component decelerator must have is [ selector, template ]
+        - Binding
+            - sending data from class to template - string interpolation => {{value}}
+            - sending data from class to template - property binding     => [property]='value'
+            - sending data from template to class - event binding        => (event)="handler"
+            - sending data two way data binding                          => [(ngModel)]='property'
+        - Component have template but Directive modify an existing template
+    - Services
+        - Business logic
+        - it literary just a class

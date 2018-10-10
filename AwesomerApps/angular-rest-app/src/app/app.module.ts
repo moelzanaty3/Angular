@@ -17,6 +17,7 @@ import { WidgetsComponent } from './widgets/widgets.component';
 import { NachosComponent } from './nachos/nachos.component';
 import { BurritosComponent } from './burritos/burritos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     ItemDetailComponent,
     WidgetsComponent,
     NachosComponent,
-    BurritosComponent
+    BurritosComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserAnimationsModule,
