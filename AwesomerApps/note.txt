@@ -1,3 +1,6 @@
+- General Notes
+    - primeNG lib
+    -
 - Building Awesomer Apps with Angular, Part 2
     - ES6 module
         - allow you to organize application into kinds of blocks that see each others
@@ -21,3 +24,26 @@
     - Services
         - Business logic
         - it literary just a class
+- Forms
+    - In every form there are two kinds of things that need to track
+        - state of the form     => mean valid/not valid
+        - data of the form
+    - Template Driven Forms
+        - To use it we must import FormsModule
+        - FormsModule
+            - enable two-way data binding withing a form
+            - creates a form control instance from a domain model and binds it to from element
+            - we can create a local variable to reference the ngModel instance of the element
+        - FormControls
+            - ngControl     : binds a DOM element to FormControl
+            - Form Control  : responsible for tracking value and validation status of a single form element
+            - you can group FormControls together with FormGroup
+            - ngForm        : binds an HTML form to top-level FormGroup
+            - we can create a local variable to reference the ngForm instance of the form
+            - ngModelGroup  : creates and binds a FormGroup instance to DOM element
+        - Validation Styles
+            - Angular will automatically attach styles to a form element depending on it's state
+            - for instance, if it in a valid state      then the ng-valid   is attached
+            - if the element is in an invalid state     then the ng-invalid is attached
+            - there are additional styles such as ng-pristine and ng-untouched
+                - pristine is have you ever touched it at all.
