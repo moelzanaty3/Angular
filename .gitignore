@@ -221,3 +221,4 @@ fabric.properties
 
 # next.js build output
 .next
+.idea/
