@@ -9,11 +9,16 @@ import { Item } from '../../shared';
 export class ItemDetailComponent {
   originalName: string;
   selectedItem: Item;
-  @Output() saved = new EventEmitter();
-  @Output() cancelled = new EventEmitter();
+  @Output()
+  saved = new EventEmitter();
+  @Output()
+  cancelled = new EventEmitter();
 
-  @Input() set item(value: Item){
-    if (value) { this.originalName = value.name; }
+  @Input()
+  set item(value: Item) {
+    if (value) {
+      this.originalName = value.name;
+    }
     this.selectedItem = Object.assign({}, value);
   }
 }

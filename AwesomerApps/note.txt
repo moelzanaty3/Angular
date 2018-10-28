@@ -1,6 +1,6 @@
 - General Notes
     - primeNG lib
-    -
+    - 
 - Building Awesomer Apps with Angular, Part 2
     - ES6 module
         - allow you to organize application into kinds of blocks that see each others
@@ -27,7 +27,7 @@
 - Forms
     - In every form there are two kinds of things that need to track
         - state of the form     => mean valid/not valid
-        - data of the form
+        - data of the form  
     - Template Driven Forms
         - To use it we must import FormsModule
         - FormsModule
@@ -47,3 +47,6 @@
             - if the element is in an invalid state     then the ng-invalid is attached
             - there are additional styles such as ng-pristine and ng-untouched
                 - pristine is have you ever touched it at all.
+- Observalbes 
+    - stream => it's a series of values in time.
+    -

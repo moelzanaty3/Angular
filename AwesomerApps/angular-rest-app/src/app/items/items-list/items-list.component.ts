@@ -1,6 +1,16 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Item } from '../../shared';
-import { trigger, transition, state, group, style, animate, keyframes, query, stagger } from '@angular/animations';
+import {
+  trigger,
+  transition,
+  state,
+  group,
+  style,
+  animate,
+  keyframes,
+  query,
+  stagger
+} from '@angular/animations';
 
 @Component({
   selector: 'app-items-list',
@@ -8,8 +18,12 @@ import { trigger, transition, state, group, style, animate, keyframes, query, st
   styleUrls: ['./items-list.component.scss']
 })
 export class ItemsListComponent {
-  @Input() items: Item[];
-  @Input() readonly = false;
-  @Output() selected = new EventEmitter();
-  @Output() deleted = new EventEmitter();
+  @Input()
+  items: Item[];
+  @Input()
+  readonly = false;
+  @Output()
+  selected = new EventEmitter();
+  @Output()
+  deleted = new EventEmitter();
 }

@@ -23,11 +23,15 @@ export class ItemsService {
   }
 
   create(item: Item) {
-    return this.http.post(`${BASE_URL}`, JSON.stringify(item), HEADER).map(res => res.json());
+    return this.http
+      .post(`${BASE_URL}`, JSON.stringify(item), HEADER)
+      .map(res => res.json());
   }
 
   update(item: Item) {
-    return this.http.patch(`${BASE_URL}${item.id}`, JSON.stringify(item), HEADER).map(res => res.json());
+    return this.http
+      .patch(`${BASE_URL}${item.id}`, JSON.stringify(item), HEADER)
+      .map(res => res.json());
   }
 
   delete(item: Item) {

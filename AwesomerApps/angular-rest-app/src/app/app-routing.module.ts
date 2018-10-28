@@ -2,7 +2,7 @@ import { ItemsComponent } from './items/items.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { WidgetsComponent } from './widgets/widgets.component';
+import { WidgetsComponent } from './widegts/widgets.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 
 const routes: Routes = [
