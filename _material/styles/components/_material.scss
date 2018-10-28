@@ -1,0 +1,54 @@
+mat-toolbar-row {
+  justify-content: space-between;
+}
+
+[mat-raised-button] {
+  width: 100%;
+}
+
+mat-grid-list {
+  max-width: 1403px;
+  margin: 16px;
+}
+
+mat-sidenav-layout {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 320px;
+}
+
+mat-sidenav a {
+  box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 47px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 0 16px;
+  position: relative;
+}
+
+mat-sidenav-layout {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 320px;
+}
+
+mat-sidenav a {
+  box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 47px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 0 16px;
+  position: relative;
+}

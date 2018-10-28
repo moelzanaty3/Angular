@@ -1,0 +1,64 @@
+/*------------------------------------*\
+  Components > Buttons
+\*------------------------------------*/
+
+$btn-primary-bg: $color-brand;
+$btn-primary-bg-hover: #238cf6;
+
+$btn-secondary-bg: $color-white;
+$btn-secondary-bg-hover: $bg-color-gray;
+
+.c-btn {
+  display: inline-block;
+
+  padding: half($base-spacing-unit) double($base-spacing-unit);
+
+  font-family: 'Play', sans-serif;
+
+  cursor: pointer;
+  transition: $global-transition;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-weight: bold;
+
+  border: 0;
+  border-radius: 48px;
+
+  font-size: $font-size-medium;
+
+  text-transform: uppercase;
+  outline-width: 0;
+
+  transition: box-shadow ease 0.23s;
+
+  @include attention() {
+    text-decoration: none;
+  }
+
+  &--primary {
+    color: $color-white;
+    background-color: $btn-primary-bg;
+    background-image: linear-gradient(76deg, #e72d70, #ee8e15);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 10px 50px 0 rgba(238, 142, 21, 0.4);
+
+    @include attention() {
+      background-color: $btn-primary-bg-hover;
+      box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15), 0 30px 60px 0 rgba(238, 142, 21, 0.15);
+    }
+  }
+
+  &--secondary {
+    border: 1px solid $color-border;
+    background-color: $btn-secondary-bg;
+
+    @include attention() {
+      background-color: $btn-secondary-bg-hover;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &--full {
+    width: 100%;
+  }
+}
