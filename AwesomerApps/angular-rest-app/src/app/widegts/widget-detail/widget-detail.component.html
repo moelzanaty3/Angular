@@ -9,7 +9,7 @@
       </ng-template>
     </mat-card-title>
   </mat-card-header>
-  <form #f="ngForm" (submit)="submitForm(f.value)">
+  <form #f="ngForm" (submit)="submitForm(selectedWidget)">
     <mat-card-content>
       <mat-form-field>
         <input matInput type="text" name="name" placeholder="Name" [(ngModel)]="selectedWidget.name" required>

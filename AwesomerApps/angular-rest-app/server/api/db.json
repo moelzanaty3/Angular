@@ -19,7 +19,7 @@
   "widgets": [
     {
       "id": 2,
-      "name": "Orange Widgetqwewqewqe",
+      "name": "Orange Widget",
       "description": "This is an orange widget"
     },
     {
@@ -88,9 +88,9 @@
       "id": 15
     },
     {
-      "name": "Orange Widgetqwewqewqe",
-      "description": "This is an orange widget",
-      "id": 16
+      "id": 16,
+      "name": "znzn",
+      "description": "znznz"
     }
   ]
 }

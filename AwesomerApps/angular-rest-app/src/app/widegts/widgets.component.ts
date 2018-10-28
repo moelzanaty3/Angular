@@ -50,8 +50,8 @@ export class WidgetsComponent implements OnInit {
   }
   savedWidget(widget) {
     if (!widget.id) {
-      this.createWidget(widget);
+      return this.createWidget(widget);
     }
-    this.updateWidget(widget);
+    return this.updateWidget(widget);
   }
 }

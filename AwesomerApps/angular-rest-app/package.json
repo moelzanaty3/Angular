@@ -8,7 +8,6 @@
     "start": "concurrently \"npm run server\" \"ng serve -o\"",
     "server": "json-server server/api/db.json --watch",
     "format:fix": "pretty-quick --staged",
-    "precommit": "run-s format:fix lint \"src/**/*.{ts}\"",
     "pretty-quick": "pretty-quick",
     "build": "ng build",
     "test": "ng test",
