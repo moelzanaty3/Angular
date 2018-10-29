@@ -9,7 +9,6 @@ import { ItemsService, Item } from '../shared';
 export class ItemsComponent implements OnInit {
   items: Item[];
   currentItem: Item;
-
   constructor(private itemsService: ItemsService) {}
 
   ngOnInit() {

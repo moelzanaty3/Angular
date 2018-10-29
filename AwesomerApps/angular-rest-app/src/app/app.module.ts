@@ -15,18 +15,20 @@ import { HomeComponent } from './home/home.component';
 import { NachosComponent } from './nachos/nachos.component';
 import { BurritosComponent } from './burritos/burritos.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { ColorComponent } from './burritos/color/color.component';
+
 import {
   ItemsComponent,
   ItemsListComponent,
-  ItemDetailComponent
+  ItemDetailComponent,
+  ItemSearchComponent
 } from './items';
 import {
   WidgetsComponent,
   WidgetListComponent,
-  WidgetDetailComponent
+  WidgetDetailComponent,
+  WidgetSearchComponent
 } from './widegts';
-import { ItemSearchComponent } from './items/item-search/item-search.component';
-import { ColorComponent } from './burritos/color/color.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { ColorComponent } from './burritos/color/color.component';
     WidgetDetailComponent,
     WidgetListComponent,
     ItemSearchComponent,
-    ColorComponent
+    ColorComponent,
+    WidgetSearchComponent
   ],
   imports: [
     BrowserAnimationsModule,

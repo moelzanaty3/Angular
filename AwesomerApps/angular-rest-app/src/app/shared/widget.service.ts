@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { IWidget } from './widget.model';
 
@@ -41,10 +41,9 @@ export class WidgetService {
     }
   }
   search(term: string) {
-    const search = new URLSearchParams();
-    search.set('q', term);
+    let params = new HttpParams().set('q', term);
     return this._http
-      .get(`${BASE_URL}/${search}`)
+      .get(`${BASE_URL}`, { params: params })
       .pipe(map(widgets => widgets));
   }
 }
