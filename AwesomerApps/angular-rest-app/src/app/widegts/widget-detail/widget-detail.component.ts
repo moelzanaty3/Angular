@@ -21,11 +21,4 @@ export class WidgetDetailComponent {
     }
     this.selectedWidget = Object.assign({}, widget);
   }
-
-  submitForm(widget: IWidget) {
-    this.saved.emit(widget);
-  }
-  cancel(widget: IWidget) {
-    this.cancelled.emit(widget);
-  }
 }

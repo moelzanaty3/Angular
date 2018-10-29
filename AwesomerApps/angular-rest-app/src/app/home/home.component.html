@@ -1,12 +1,12 @@
 <div class="container">
   <div class="col-50">
+    <app-item-search></app-item-search>
     <app-items-list [items]="items" [readonly]="true"></app-items-list>
   </div>
   <div class="col-50">
-    <app-reviews></app-reviews>
-    <hr>
-    <app-nachos></app-nachos>
-    <hr>
-    <!--<app-widgets></app-widgets>-->
+    <app-widget-list [widgets]="widgets" [readonly]="true"></app-widget-list>
   </div>
 </div>
+
+<!-- Tests -->
+<!-- <app-burritos></app-burritos> -->

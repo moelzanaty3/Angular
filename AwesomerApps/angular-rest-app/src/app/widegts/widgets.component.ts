@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WidgetService } from '../shared';
 import { IWidget } from './../shared';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-widgets',

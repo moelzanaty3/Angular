@@ -9,6 +9,8 @@ import { IWidget } from './../../shared';
 export class WidgetListComponent {
   @Input()
   widgets: IWidget[];
+  @Input()
+  readonly: boolean = false;
   @Output()
   selected = new EventEmitter();
   @Output()

@@ -8,7 +8,7 @@
     <mat-list>
       <mat-list-item *ngFor="let widget of widgets" (click)="selected.emit(widget)">
         <h3 mat-line>{{widget.name}}</h3>
-        <button mat-icon-button (click)="deleted.emit(widget);$event.stopImmediatePropagation();">
+        <button mat-icon-button *ngIf="!readonly" (click)="deleted.emit(widget);$event.stopImmediatePropagation();">
           <mat-icon>close</mat-icon>
         </button>
         <p mat-line>

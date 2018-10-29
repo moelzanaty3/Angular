@@ -9,7 +9,7 @@
       </ng-template>
     </mat-card-title>
   </mat-card-header>
-  <form #f="ngForm" (submit)="submitForm(selectedWidget)">
+  <form #f="ngForm" (submit)="saved.emit(selectedWidget)">
     <mat-card-content>
       <mat-form-field>
         <input matInput type="text" name="name" placeholder="Name" [(ngModel)]="selectedWidget.name" required>
@@ -20,7 +20,7 @@
     </mat-card-content>
     <mat-card-actions>
       <button type="submit" mat-button [disabled]="f.invalid">Save</button>
-      <button type="button" mat-button (click)="cancel(selectedWidget)">Cancel</button>
+      <button type="button" mat-button (click)="cancelled.emit(selectedWidget)">Cancel</button>
     </mat-card-actions>
   </form>
 

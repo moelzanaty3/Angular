@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
 import { IWidget } from './widget.model';
 
 const BASE_URL = 'http://localhost:3000/widgets';
@@ -25,20 +24,20 @@ export class WidgetService {
     if (!widegt.id) {
       return this._http
         .post(`${BASE_URL}`, JSON.stringify(widegt), HEADER)
-        .pipe(map(widgetsResponse => widgetsResponse));
+        .pipe(map(widgets => widgets));
     }
     return null;
   }
   update(widget: IWidget) {
     return this._http
       .patch(`${BASE_URL}/${widget.id}`, JSON.stringify(widget), HEADER)
-      .pipe(map(widgetsResponse => widgetsResponse));
+      .pipe(map(widgets => widgets));
   }
   delete(widget: IWidget) {
     if (widget.id) {
       return this._http
         .delete(`${BASE_URL}/${widget.id}`)
-        .pipe(map(widgetsResponse => widgetsResponse));
+        .pipe(map(widgets => widgets));
     }
   }
   search(term: string) {
@@ -46,6 +45,6 @@ export class WidgetService {
     search.set('q', term);
     return this._http
       .get(`${BASE_URL}/${search}`)
-      .pipe(map(widgetsResponse => widgetsResponse));
+      .pipe(map(widgets => widgets));
   }
 }
