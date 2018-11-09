@@ -1,3 +1,7 @@
+* linguist-vendored
+*.js linguist-vendored=false
+
+
 # See this article for reference: https://help.github.com/articles/dealing-with-line-endings/
 # Refreshing repo after line ending change:
 # https://help.github.com/articles/dealing-with-line-endings/#refreshing-a-repository-after-changing-line-endings
