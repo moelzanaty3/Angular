@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from '../_pages';
+import { HomeComponent, CallbackComponent } from '../_pages';
 
-const routes: Routes = [{ path: '', component: HomeComponent }];
+const routes: Routes = [
+  {
+    path: 'callback',
+    component: CallbackComponent
+  },
+  { path: '', component: HomeComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
