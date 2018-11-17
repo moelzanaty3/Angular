@@ -1,0 +1,7 @@
+{
+  "editor.fontFamily": "'Operator Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "files.autoSave": "onWindowChange",
+  "editor.fontLigatures": true,
+  "prettier.singleQuote": true,
+  "editor.formatOnSave": true
+}
