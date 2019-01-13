@@ -26,4 +26,22 @@
             - Organize our application
             - Modularize our application
             - Promorte application boundaries 
-    - 
+- Component 
+    - Template 
+        - Veiw layout 
+        - Created with HTML
+        - Includes binding and directives 
+    - Class [ Properties, Methods ]
+        - Code supporting the view 
+        - Created with Typescript
+        - Properties: data 
+        - Methods: logic 
+    - Metadata 
+        - Extra data for Angular 
+        - is defained with a decorator, which is a function that add metadata to 
+            a class it's members, or its method arguments 
+    - Component is a view defained in a template, it's associated code defained with a class, 
+        and metadata defained with a decorator.
+    - Decorator 
+        - A function that adds metadata to a class, its members, or its method arguments 
+        - Prefixed with an @ 

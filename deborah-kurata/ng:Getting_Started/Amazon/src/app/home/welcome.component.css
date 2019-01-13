@@ -1,0 +1,12 @@
+:host {
+    display: block;
+    overflow: hidden;
+}
+.hero-area{
+    width: 100%;
+    height: 500px;
+}
+.hero-area img {
+    width: 100%;
+    min-height: 100%;
+}
