@@ -1,0 +1,29 @@
+- First Things First 
+    - Selecting Language 
+        - ES5 
+            - Runs in the browser 
+            - No Compile required 
+        - ES 2015 
+            - Lots of new features [ classes, let, arrow, etc....]
+        - Typescript 
+            - Superset of Javascript 
+            - Strong typing 
+            - Great IDE tooling 
+            - Open Source Language
+            - Class-based object-orientation 
+            - Transpiles to plain Javascript
+        - Dart 
+            - No Javascript
+    - Modules 
+        - ES Modules
+            - Code files that import or export something 
+            - Organize our code files 
+            - Modularize our code 
+            - Promorte code reuse 
+        - Angular Modules 
+            - Code files that Organize the application into 
+                cohesive blocks of functionality 
+            - Organize our application
+            - Modularize our application
+            - Promorte application boundaries 
+    - 

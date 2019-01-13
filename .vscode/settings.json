@@ -1,7 +1,22 @@
 {
-  "editor.fontFamily": "'Operator Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "files.autoSave": "onWindowChange",
+  "editor.fontFamily": "Dank Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.formatOnSave": false,
+  "editor.wordWrap": "on",
   "editor.fontLigatures": true,
-  "prettier.singleQuote": true,
-  "editor.formatOnSave": true
+  "editor.minimap.enabled": false,
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Monokai",
+  "editor.fontSize": 14,
+  "search.exclude": {
+    "**/node_modules/*/**": true,
+    "**/bower_components": true,
+    "**/temp": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true
+  },
+  "breadcrumbs.enabled": true,
+  "vsicons.projectDetection.autoReload": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "prettier.singleQuote": true
 }
