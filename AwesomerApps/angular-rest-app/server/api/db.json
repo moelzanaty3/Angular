@@ -9,11 +9,6 @@
       "id": 8,
       "name": "Mohammed Elzanaty",
       "description": "It's time to change the world"
-    },
-    {
-      "id": 10,
-      "name": "Welcome ",
-      "description": "This is an orange widget"
     }
   ],
   "widgets": [
@@ -68,11 +63,6 @@
       "id": 11
     },
     {
-      "name": "asdsad",
-      "description": "assdas",
-      "id": 12
-    },
-    {
       "name": "Orange Wwqeidget",
       "description": "This is an orange widget",
       "id": 13
@@ -80,17 +70,7 @@
     {
       "name": "Orange Widget",
       "description": "This is an orange widget",
-      "id": 14
-    },
-    {
-      "name": "Orange Widget",
-      "description": "This is an orange widget",
       "id": 15
-    },
-    {
-      "id": 16,
-      "name": "znzn",
-      "description": "znznz"
     }
   ]
 }
