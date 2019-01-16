@@ -9,19 +9,19 @@
   <!-- search box -->
   <div class="ui segment">
     <div class="ui fluid icon input">
-      <input type="text" placeholder="Search a very wide input..." [(ngModel)]="searchKeyWord">
+      <input type="text" placeholder="Search a very wide input..." [(ngModel)]="listFilter">
       <i class="search icon"></i>
     </div>
   </div>
   <!-- keyword -->
   <div class="ui grid">
     <div class="two column wide">
-      <h4>Filtered keyword: <em>{{searchKeyWord}}</em> </h4>
+      <h4>Filtered keyword: <em>{{listFilter}}</em> </h4>
 
     </div>
   </div>
   <!-- table data -->
-  <table class="ui celled table"
+  <table class="ui grey celled table"
          *ngIf="products && products.length">
     <thead>
       <tr>
@@ -46,10 +46,10 @@
                [style.width.px]='imageWidth'
                [style.margin.px]='imageMargin'>
         </td>
-        <td>{{product.productName}}</td>
-        <td>{{ product.productCode}}</td>
+        <td>{{product.productName | uppercase }}</td>
+        <td>{{ product.productCode | convertToSpace}}</td>
         <td>{{ product.releaseDate }}</td>
-        <td>{{ product.price }}</td>
+        <td>{{ product.price | currency:'USD':'symbol':'1.2-2'}}</td>
         <td>{{index}}</td>
       </tr>
     </tbody>

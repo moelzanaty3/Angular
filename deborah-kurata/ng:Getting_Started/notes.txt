@@ -54,3 +54,31 @@
         - From Component Class property to an element property
 - Directives
     - Custom HTML element or attribute used to power up and extend our HTML.
+- Data Binding & Pipes 
+    - property binding 
+        * <img [src]="product.imageUrl"></img>
+        * <img src={{product.imageUrl}}></img>
+        * <img src='https://www.mohammedelzanaty.com/{{product.imageUrl}}'></img>
+    - event binding 
+        * <button (click)="toggleSomething()"></button>
+    - two way data binding 
+        * [(ngModel)]=''
+    - Pipes 
+        * Transform bound Properties before display 
+        * Built-in pipes 
+            - data
+            - number, decimal, percent, currency 
+            - json, slice 
+        * Custom pipe
+- Interface 
+    - A specification identifying a realted set of properties and methods. 
+    - A class commits to supporting the specification by implemmenting the interface.
+    - Use an interface as DATA_TYPE
+
+- Compoent Life Cycle 
+    - [Create, Render, Create and Render Children, Process Changes, Destroy]
+    - Angular creates it, renders it, creates and renders its children, checks it when its data-bound properties change, and destroys it before removing it from the DOM.
+    - Angular only calls a directive/component hook method if it is defined.
+    - OnInit    : Perform component initialization, retrieve data  
+    - OnChange  : Perform actions after change to input properties
+    - OnDestroy : Perform cleanup
