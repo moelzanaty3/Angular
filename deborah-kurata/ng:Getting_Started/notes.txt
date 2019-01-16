@@ -45,3 +45,12 @@
     - Decorator 
         - A function that adds metadata to a class, its members, or its method arguments 
         - Prefixed with an @ 
+
+- Binding, Coordinates communicatiion btw the component's class 
+    and it's template and often involves passsing data.
+    - Interpolation [one way databinding]
+        - <h1>{{pageTemplete}}</h1>
+        - <h1 innerHTML="{{pageTemplete}}"></h1>
+        - From Component Class property to an element property
+- Directives
+    - Custom HTML element or attribute used to power up and extend our HTML.

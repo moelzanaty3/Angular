@@ -4,11 +4,11 @@
       <img class="logo" src="assets/images/logo.png">
     </a>
     <div class="right menu">
-      <a href="#" class="item">Home</a>
-      <a href="#" class="item">Product</a>
+      <a class="item" [routerLink]="['/']">Home</a>
+      <a class="item" [routerLink]="['/products']">Product</a>
     </div>
   </div>
 </div>
-<div class="ui vertical masthead center aligned segment" style="margin-top:39px;">
+<div class="ui main  container ">
   <router-outlet></router-outlet>
 </div>
