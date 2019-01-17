@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'pm-star',
   templateUrl: './star.component.html',
   styleUrls: ['./star.component.css']
 })
-export class StarComponent implements OnInit {
+export class StarComponent implements OnChanges {
+  @Input() rating: number;
+  starWidth: number;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnChanges(): void {
+    this.starWidth = (this.rating * 75) / 5;
   }
-
 }

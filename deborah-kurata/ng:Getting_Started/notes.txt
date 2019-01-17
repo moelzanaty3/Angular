@@ -82,3 +82,7 @@
     - OnInit    : Perform component initialization, retrieve data  
     - OnChange  : Perform actions after change to input properties
     - OnDestroy : Perform cleanup
+
+- 
+
+ 

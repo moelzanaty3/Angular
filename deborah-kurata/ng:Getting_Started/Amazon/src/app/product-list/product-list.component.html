@@ -38,7 +38,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let product of products; let index= index">
+      <tr *ngFor="let product of products | filter: listFilter:'productName' ; let index= index ">
         <td class="center aligned image">
           <img [src]='product.imageUrl'
                *ngIf='exist'
@@ -47,10 +47,10 @@
                [style.margin.px]='imageMargin'>
         </td>
         <td>{{product.productName | uppercase }}</td>
-        <td>{{ product.productCode | convertToSpace}}</td>
+        <td>{{ product.productCode | convertToSpace:'-'}}</td>
         <td>{{ product.releaseDate }}</td>
         <td>{{ product.price | currency:'USD':'symbol':'1.2-2'}}</td>
-        <td>{{index}}</td>
+        <td><pm-star [rating]="product.starRating"></pm-star></td>
       </tr>
     </tbody>
   </table>
