@@ -83,6 +83,23 @@
     - OnChange  : Perform actions after change to input properties
     - OnDestroy : Perform cleanup
 
-- 
+- Service
+    - A class with a focused purpose.
+    - Used for features that: 
+        - Are independent from any particular component 
+        - Provide shared data or logic across components 
+        - Encapsulate external interactions 
+    - Dependency Injection 
+        - A coding pattern in which a class receives the instances of objects it need (called dependencies) 
+          from an external resouc rather than creating them itself.
+    - Registering a service 
+        - Root Injector 
+            - Service is available throughout the application 
+            - Recommended for most scenarios 
+        - Component Injector 
+            - Service is available ONLY to that component and it's child [nested] component.
+            - Isloates a service used by only one component 
+            - Provides multiple instances of the service
+            
 
  

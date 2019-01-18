@@ -21,6 +21,7 @@
     </div>
   </div>
   <!-- table data -->
+  <div class="ui active centered inline loader" *ngIf="!isFetched"></div>
   <table class="ui grey celled table"
          *ngIf="products && products.length">
     <thead>
@@ -54,5 +55,10 @@
       </tr>
     </tbody>
   </table>
-
-</div>
+  <div class="ui placeholder segment" *ngIf="!(products && products.length) && isFetched" >
+      <div class="ui icon header">
+        <i class="search icon"></i>
+        We don't have any products
+      </div>
+    </div>
+</div> 

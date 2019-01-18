@@ -6,7 +6,7 @@
     "releaseDate": "Jan 19, 2019",
     "description": "13-inch Retina display, 1.6GHz dual-core Intel Core i5, 128GB) - Gold (Latest Model)",
     "price": 1149,
-    "starRating": 3.6,
+    "starRating": 2,
     "imageUrl": "http://bit.ly/2M5JpbR"
   },
   {
@@ -26,7 +26,7 @@
     "releaseDate": "May 21, 2019",
     "description": "Chromebook Flip 12.5-inch Touchscreen Convertible Chromebook, Intel Core m3, 4GB RAM, 64GB Flash Storage, All-Metal Body, USB Type C, Corning Gorilla Glass, Chrome OS",
     "price": 474.99,
-    "starRating": 4.8,
+    "starRating": 1,
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41LBkDN-S3L._AC_AA200_.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "releaseDate": "May 15, 2019",
     "description": "14 Full HD, Intel Celeron N4000, 4GB DDR4, 64GB eMMC, Office 365 Personal, Windows 10 Home in S Mode",
     "price": 249.99,
-    "starRating": 3.7,
+    "starRating": 3,
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41EYu4yb6sL._AC_AA200_.jpg"
   },
   {
@@ -46,7 +46,7 @@
     "releaseDate": "October 15, 2015",
     "description": "Full HD, 8th Gen Intel Core i3-8130U, 6GB RAM Memory, 1TB HDD, 8X DVD, E5-576-392H",
     "price": 379.99,
-    "starRating": 4.6,
+    "starRating": 1,
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41HfDkXXyeL._AC_AA200_.jpg"
   }
 ]
