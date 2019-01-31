@@ -1,6 +1,0 @@
-Copyright (c) 2018 mohammed elzanaty
-
-- angular-2-getting-started 	[ http://bit.ly/2sqTozb ] -> [http://bit.ly/Angular-GettingStarted]
-- angular-2-reactive-forms  	[ http://bit.ly/2snfmDd ] 
-- angular-routing	    	    [ http://bit.ly/2M8k6pj ]
-- angular-ngrx-getting-started 	[ http://bit.ly/2M8kjZD ] 
