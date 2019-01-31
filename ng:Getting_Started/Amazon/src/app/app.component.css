@@ -1,0 +1,16 @@
+.nav-link {
+  font-size: large;
+}
+
+.ui.menu .item>img:not(.ui) {
+  width: 7rem;
+}
+
+.ui.inverted.menu {
+  background: #232f3e;
+}
+
+
+.main.container {
+  margin-top: 7em;
+}
