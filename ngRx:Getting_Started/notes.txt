@@ -1,0 +1,40 @@
+- Links 
+    - http://bit.ly/2FjcwqO
+    
+- Redux is a way of preditable state container for javascript apps.
+- NgRx based on Redux 
+- Redux Principles 
+    - Single source of truth called the store 
+    - State is readonly and only changed by dispatching actions 
+    - Changes are made using pure functions called reducers
+- Store 
+    - is literally a javascript object that holds all of your application state, something like [ client-side DB ]
+    - What should NOT go on the store 
+        - Shared State 
+        - Angular form state 
+        - Non-serializable state [ ex. the router state ]
+- Actions 
+    - Dispatch an action to change the state 
+    - All relevant user events are dispatched as actions effecting reducers who update the store. 
+    - Examples 
+        - Login action after a login form submission
+        - Toggle side menu action after a button click.
+        - Retrieve data action when initializing a component. 
+        - Start global spinner action when saving data.
+- Reducers 
+    - Function that specify how state in response to an action 
+    - Examples
+        - set a userDetails property on login. 
+        - toggle a sideMenu visible property to true on button click.
+        - set Successfully retrieved data on component initialization.
+        - set a globalSpinnerVisible property to true while saving data.
+
+- Advantage of the Redux pattern 
+    - Centeralized immutable state 
+    - Performance 
+    - Testability 
+    - Tooling 
+    - Component communication
+
+- 
+    
