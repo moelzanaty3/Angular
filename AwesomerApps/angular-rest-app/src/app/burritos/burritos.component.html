@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Choose Brand Colors:</h2>
+  <app-color [color]="primary" #primaryColorSample></app-color>
+
+  <mat-form-field>
+    <mat-label>Primary Color</mat-label>
+    <input matInput #primaryInput [(colorPicker)]="primary" [(ngModel)]="primary" />
+  </mat-form-field>
+</div>

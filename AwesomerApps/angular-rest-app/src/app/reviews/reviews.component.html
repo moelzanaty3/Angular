@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<hr>
+<mat-list>
+  <mat-list-item *ngFor="let review of reviewsRating">
+    <h5>{{review.name}} <mat-label>{{review.ratingValue}}</mat-label></h5>
+  </mat-list-item>
+</mat-list>
