@@ -10,6 +10,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { StarComponent } from './shared/components/star/star.component';
 import { ConvertToSpacePipe } from './shared/pipes/convert-to-space.pipe';
 import { FilterPipe } from './shared/pipes/filter.pipe';
+import { ProductDetailsComponent } from './product-list/product-details/product-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,14 +21,16 @@ import { FilterPipe } from './shared/pipes/filter.pipe';
     StarComponent,
     /* Pipes */
     ConvertToSpacePipe,
-    FilterPipe
+    FilterPipe,
+    ProductDetailsComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
   ],
   bootstrap: [AppComponent]
 })

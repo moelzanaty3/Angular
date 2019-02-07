@@ -19,10 +19,10 @@ export class ProductListComponent implements OnInit {
   constructor(private productsService: ProductsService ) {}
 
   ngOnInit() {
-    setTimeout(()=> {
+    this.productsService.getProducts().subscribe((products: IProduct[]) => {
       this.isFetched = !this.isFetched;
-      this.products = this.productsService.getProducts();
-    }, 2000)
+      this.products = products;
+    })
   }
 
   toggleImage(): void {

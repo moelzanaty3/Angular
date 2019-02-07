@@ -1,0 +1,56 @@
+<div class="ui active centered inline loader"
+     style="margin-top: 10px;"
+     *ngIf="!isFetched"></div>
+
+
+<div id="product"
+     *ngIf="isFetched && !noProduct">
+  <div class="ui breadcrumb">
+    <a class="section"
+       [routerLink]="['/products']">Products</a>
+    <div class="divider"> / </div>
+    <a class="section">{{product.productName}}</a>
+  </div>
+  <!-- header -->
+  <div class="content">
+    <h2 class="header">
+      {{product.productName}}
+    </h2>
+  </div>
+  <div class="ui unstackable items">
+    <div class="item">
+      <div class="image">
+        <img [src]="product.imageUrl">
+      </div>
+      <div class="content">
+        <div class="meta">
+          <span>{{product.productCode}}</span>
+        </div>
+        <div class="description">
+          <p>
+            {{product.description}}
+          </p>
+        </div>
+        <div class="extra">
+          <div class="ui label">
+            <i class="money bill alternate outline icon"></i> {{ product.price | currency:'USD':'symbol':'1.2-2'}}
+          </div>
+          <div class="ui label">
+            <pm-star [rating]="product.starRating"></pm-star>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="ui text">
+          {{product.info}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Handle No Data -->
+<div class="ui ignored info message"
+     *ngIf="isFetched && noProduct">
+  sorry for that but there is not product with id
+</div>

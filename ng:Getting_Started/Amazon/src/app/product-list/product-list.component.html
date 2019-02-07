@@ -9,7 +9,9 @@
   <!-- search box -->
   <div class="ui segment">
     <div class="ui fluid icon input">
-      <input type="text" placeholder="Search a very wide input..." [(ngModel)]="listFilter">
+      <input type="text"
+             placeholder="Search a very wide input..."
+             [(ngModel)]="listFilter">
       <i class="search icon"></i>
     </div>
   </div>
@@ -21,14 +23,16 @@
     </div>
   </div>
   <!-- table data -->
-  <div class="ui active centered inline loader" *ngIf="!isFetched"></div>
+  <div class="ui active centered inline loader"
+       *ngIf="!isFetched"></div>
   <table class="ui grey celled table"
          *ngIf="products && products.length">
     <thead>
       <tr>
         <th>
           <div class="ui two buttons">
-            <div class="ui basic green button" (click)="toggleImage()">{{ (exist) ? 'Hide' : 'Show'}} Image</div>
+            <div class="ui basic green button"
+                 (click)="toggleImage()">{{ (exist) ? 'Hide' : 'Show'}} Image</div>
           </div>
         </th>
         <th>Product</th>
@@ -47,18 +51,23 @@
                [style.width.px]='imageWidth'
                [style.margin.px]='imageMargin'>
         </td>
-        <td>{{product.productName | uppercase }}</td>
+        <td><a [routerLink]="['/products', product.id]">
+            {{product.productName | uppercase }}
+          </a></td>
         <td>{{ product.productCode | convertToSpace:'-'}}</td>
         <td>{{ product.releaseDate }}</td>
         <td>{{ product.price | currency:'USD':'symbol':'1.2-2'}}</td>
-        <td><pm-star [rating]="product.starRating"></pm-star></td>
+        <td>
+          <pm-star [rating]="product.starRating"></pm-star>
+        </td>
       </tr>
     </tbody>
   </table>
-  <div class="ui placeholder segment" *ngIf="!(products && products.length) && isFetched" >
-      <div class="ui icon header">
-        <i class="search icon"></i>
-        We don't have any products
-      </div>
+  <div class="ui placeholder segment"
+       *ngIf="!(products && products.length) && isFetched">
+    <div class="ui icon header">
+      <i class="search icon"></i>
+      We don't have any products
     </div>
-</div> 
+  </div>
+</div>
